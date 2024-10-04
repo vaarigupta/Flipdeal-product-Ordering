@@ -26,17 +26,17 @@
 
 ## API Endpoints
 
--   **Calculate Cart Total**: When a user adds a new item to the cart, the frontend makes a `GET` request to `/cart-total` with the price of the new item and the current cart total to update the total price. `http://localhost:3000/cart-total?newItemPrice=1200&cartTotal=0`
+-   **Calculate Cart Total**: When a user adds a new item to the cart, the frontend makes a `GET` request to `/cart-total` with the price of the new item and the current cart total to update the total price. => `http://localhost:3000/cart-total?newItemPrice=1200&cartTotal=0`
     
--   **Apply Membership Discount**: If the user is a member, the frontend makes a `GET` request to `/membership-discount` to apply any applicable discounts to the cart total. `http://localhost:3000/membership-discount?cartTotal=3600&isMember=true`
+-   **Apply Membership Discount**: If the user is a member, the frontend makes a `GET` request to `/membership-discount` to apply any applicable discounts to the cart total. => `http://localhost:3000/membership-discount?cartTotal=3600&isMember=true`
     
--   **CalculateTax**: For the total cart amount, the frontend makes a `GET` request to `/calculate-tax` to apply 5% tax rate on the total cart amount. `http://localhost:3000/calculate-tax?cartTotal=3600`
+-   **CalculateTax**: For the total cart amount, the frontend makes a `GET` request to `/calculate-tax` to apply 5% tax rate on the total cart amount. => `http://localhost:3000/calculate-tax?cartTotal=3600`
     
--   **Estimate Delivery Time**: The user can see the estimated delivery time by making a `GET` request to `/estimate-delivery` with the chosen shipping method and delivery distance. `http://localhost:3000/estimate-delivery?shippingMethod=express&distance=600`  
+-   **Estimate Delivery Time**: The user can see the estimated delivery time by making a `GET` request to `/estimate-delivery` with the chosen shipping method and delivery distance. => `http://localhost:3000/estimate-delivery?shippingMethod=express&distance=600`  
     
--   **Calculate Shipping Cost**: The shipping cost based on the weight of the items and the delivery distance is calculated by making a `GET` request to `/shipping-cost`. `http://localhost:3000/shipping-cost?weight=2&distance=600`
+-   **Calculate Shipping Cost**: The shipping cost based on the weight of the items and the delivery distance is calculated by making a `GET` request to `/shipping-cost`. =>  `http://localhost:3000/shipping-cost?weight=2&distance=600`
     
--   **Calculate Loyalty Points:** To calculate the loyalty points, front end is making a `GET` request to `/loyalty-points` to add 2 points per $1. ` http://localhost:3000/loyalty-points?purchaseAmount=3600`
+-   **Calculate Loyalty Points:** To calculate the loyalty points, front end is making a `GET` request to `/loyalty-points` to add 2 points per $1. => ` http://localhost:3000/loyalty-points?purchaseAmount=3600`
 
   **Deployed Link:**  [flipdeal-product-ordering](https://flipdeal-product-ordering.vercel.app)
   
